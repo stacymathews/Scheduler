@@ -3699,7 +3699,7 @@ const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 // true  = skip the login, go straight into the app as admin (LOCAL data only, no cloud)
 // false = normal login screen + cloud sync + role permissions
 // Flip this to false when you're ready to go live for the team.
-const DEV_BYPASS_LOGIN = true;
+const DEV_BYPASS_LOGIN = false;
 
 // Pull the shared app state from the cloud and render it
 async function loadCloud(){
